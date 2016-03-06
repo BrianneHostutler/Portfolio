@@ -16,7 +16,7 @@ header{
 	font-weight: bold;
 	background-color: #4aaaa5;
 	font-size: 20pt;
-	padding: 30px 10px 45px 10px;
+	padding: 30px 10px 30px 10px;
 	margin-left: 80px
 }
 
@@ -24,7 +24,8 @@ nav{
 	display:inline-block;
 	color:#777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	margin-left: 800px;
+	
+	float: right;
 }
 
 a:visited {
@@ -160,215 +161,41 @@ html {
 }
 
 
-@media (max-width: 980px) {
-	p{
-		float:right;
-	}
-	#pic{
-		width: 300px;
-		height: 300px;
-		margin-left: 10px;
-	}
-	nav{
-		display:inline;
-		margin-left: 300px;
-	}
-	#name{
-		margin-left: 20px;
-		float:left;
-		padding-bottom: 25px;
-		padding-top: 50px;
-		margin-top: 0px;
-	}
+
+@media (max-width: 895px){
+	
 	section{
-		width: 40%;
-		margin-bottom: 20px;
-	}
+	background-color: white;
+	border: solid 1px #ddd2d2;
+	width: 55%;
+	height: 50%;
+	float: left;
+	margin: 30px 0px 10px 110px;
+	padding:20px;
+}
+
 	#sidebar{
-		margin: 30px 140px 20px 0px;
 		float: left;
-		width: 30%;
-		margin-top: 0px;
+		margin-bottom: 50px;
 		margin-left: 110px;
-	}
-	#image{
-		width: 130%;
-		height: 120%;
-	}
-	.image-wrapper p{
-		padding-right: 70px;
-		padding-left:60px;
-		position: absolute;
-    	left: 15px;
-    	top: 210px;
-	}
-	footer{
-		position: relative;
-		margin-top: -150px; 
-		height: 20px;
-		clear:both;
-		width: 100%
-	}
-	
-}
-
-
-@media (max-width: 768px){
-	#pic{
-		width: 250px;
-		height: 250px;
-		margin-left: 0px;
-		float: left;
-	}
-	section{
-		width:80%;
-		margin-left: 20px;
-		margin-bottom: 20px;
-	}
-	#all{
-		width: 50%;
-	}
-	nav{
-		display: inline-block;
-		margin-top: -40px;
-		padding: 10px;
-
-	}
-	header{
-		padding-left: 0px;
-		padding-bottom: 100px;
-		padding-right: 60px;
-		padding-top: 0px;
-	}
-	#name{
-		margin-left: 20px;
-		float:left;
-		padding-bottom: 25px;
-		padding-top: 50px;
-		margin-top: 0px;
-	}
-	#sidebar{
-		float: left;
-		padding-right: 30px;
-		margin-left: 20px;
 		width: 30%;
-
 	}
-	footer{
+footer{
 		position: relative;
 		margin-top: -150px; 
 		height: 20px;
 		clear:both;
 		width: 100%
-
-	} 
-	#image{
-		height: 100% ;
-		width: 100%;
-	}
-	.image-wrapper p{
-		position: absolute;
-    	left: 15px;
-    	top: 135px;
-    	padding-right: 15px;
-		padding-left:15px;
-		
-	}
-	
-}	
-@media (max-width: 675px){
-	#pic{
-		width:90%;
-		height:90%;
-	}
-	#all{
-		float:left;
-		width:90%;
-		height:90%;
-	}
 }
-
-
-@media (max-width: 640px){
 	#all{
 		float:left;
-		width: 90%;
-		margin-left: 20px;
 	}
 	#pic{
-		width: 90%;
-		height: 90%;
-		margin-left: 10px;
-		margin-bottom: 10px;
-		margin-top: 10px
+		height: 80%;
+		width: 80%;
 	}
-	nav{
-		width:100%;
-		background-color: white;
-		border-bottom: solid 1px #ddd2d2;
-		padding-right: 70px;
-		padding-top: 20px;
-		float:none;
-		margin-top: 0px;
-		margin-left: 0px;
-		text-align: center;
-		padding-bottom: 20px
 
-	}
-	#port{
-		margin-left: 70px;
-		margin-right: 70px;
-		margin-bottom: 20px;
-		border: none;
-	}
-	#name{
-		margin-left: 0px;
-		text-align: center;
-		position: relative;
-		margin-top: 0px; 
-		height: 20px;
-		clear:both;
-		width: 100%;
-		padding-right: 70px;
-		padding-bottom: 40px;
-		padding-top: 40px;
-		
-
-	}
-	header{
-		position: static;
-		width:90%;
-		padding-top: 0px;
-		padding-right: 50px;
-		padding-bottom: 0px;
-		border-bottom: none;
-	}
-	section{
-		margin-left: 50px;
-	}
-	#sidebar{
-		margin-left: 50px;
-	}
-	footer{
-		position: relative;
-		margin-top: -150px; 
-		height: 20px;
-		clear:both;
-		width: 90%
-	}	
-		#image{
-		height: 170% ;
-		width: 190%;
-	}
-	.image-wrapper p{
-		position: absolute;
-    	left: 15px;
-    	top: 300px;
-    	padding-right: 125px;
-		padding-left:130px;
-	}
-}	
-
+}
 
 
 
