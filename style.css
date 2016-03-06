@@ -8,6 +8,7 @@ header{
 	background-color: white;
 	border-bottom: solid #ddd2d2;
 	padding:30px;
+
 }
 
 #name{
@@ -24,8 +25,8 @@ nav{
 	display:inline-block;
 	color:#777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	
 	float: right;
+	margin-right: 100px;
 }
 
 a:visited {
@@ -33,8 +34,9 @@ color: #4aaaa5;
 }
 
 a:hover {
-  color: #4aaaa5;
+  color: gray;
 }
+
 section{
 	background-color: white;
 	border: solid 1px #ddd2d2;
