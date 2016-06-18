@@ -1,0 +1,166 @@
+body{
+  background-color: black;
+}
+p, h1, h2, h3, h4, a{
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+p{
+  font-size: 16px;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  padding: 1%;
+}
+a:visited{
+  color: gray;
+  text-decoration: none;
+}
+a:hover{
+  color: #263248;
+  cursor:pointer;
+}
+a:link{
+  color: black;
+
+}
+header{
+  background-color: #263248;
+  padding: 30px;
+}
+#name{
+  float:left;
+  color: white;
+}
+.container{
+  margin: 7%;
+  
+  background-color: #7E8AA2;
+  padding:20px;
+  overflow:auto;
+}
+h2{
+  text-align: center;
+ font-size: 24pt;
+}
+h4{
+  text-align: center;
+}
+#navigation{
+  text-align: right;
+}
+#navigation a:link{
+  color: white;
+  text-decoration: none;
+  padding:20px;
+}
+.aboutSection{
+  background-color: white;
+  border: black 2px solid;
+  padding:10px;
+}
+.aboutSection p{
+  text-align: left;
+}
+#home{
+  margin: 7%;
+}
+#me{
+  border-radius: 50%;
+  float: left;
+  margin: 3%;
+
+}
+#email{
+  margin:20%;
+}
+.socialIcons{
+  text-align: center;
+}
+#linkedIn{
+  display: inline-block;
+}
+#projects{
+  margin-top: 5%;
+  overflow:auto;
+  background-color: white;
+  border: black 2px solid;
+}
+#projects img{
+  width: 375px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+#projects h3, p{
+  text-align: center;
+  margin: 15px;
+}
+#contact{
+  margin-top: 20px;
+  margin-left: 25%;
+  padding: 20px;
+  width: 40%;
+  background-color:  white;
+  overflow:auto;
+  border: 2px solid black;
+}
+#projectsWrapper{
+  margin-left: 20px;
+  padding: 30px;
+
+}
+
+.flip-container {
+  perspective: 1000px;
+  float:left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 375px;
+  height: 300px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  border: black 1px solid;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  border: black 1px solid;
+  background-color: white;
+}
+
+
+echo "# test.." >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/BrianneHostutler/Portfolio.git
+git push -u origin master
