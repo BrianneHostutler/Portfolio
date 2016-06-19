@@ -13,6 +13,13 @@ h1{
 h2{
   padding: 1%;
 }
+h3{
+  font-size: 24pt;
+  padding-top:100px;
+}
+h4{
+  font-size: 20px;
+}
 a:visited{
   color: gray;
   text-decoration: none;
@@ -23,7 +30,9 @@ a:hover{
 }
 a:link{
   color: black;
-
+}
+.noUnderline{
+  text-decoration: none;
 }
 header{
   background-color: #263248;
@@ -35,7 +44,6 @@ header{
 }
 .container{
   margin: 7%;
-  
   background-color: #7E8AA2;
   padding:20px;
   overflow:auto;
@@ -70,13 +78,13 @@ h4{
   border-radius: 50%;
   float: left;
   margin: 3%;
-
 }
 #email{
   margin:20%;
 }
 .socialIcons{
   text-align: center;
+  margin-top: 10px;
 }
 #linkedIn{
   display: inline-block;
@@ -91,6 +99,14 @@ h4{
   width: 375px;
   height: 300px;
   margin-bottom: 20px;
+  clear: left;
+  display: block;
+}
+.textWrapper{
+    clear:right;
+  display: block;
+  height:300px;
+  margin-top: 30px;
 }
 #projects h3, p{
   text-align: center;
@@ -113,9 +129,11 @@ h4{
 
 .flip-container {
   perspective: 1000px;
-  float:left;
-  margin-left: 30px;
   margin-bottom: 30px;
+  margin-right: 20px;
+  float:left;
+  display: block;
+  clear:left;
 }
   /* flip the pane when hovered */
   .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -158,9 +176,4 @@ h4{
 }
 
 
-echo "# test.." >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/BrianneHostutler/Portfolio.git
-git push -u origin master
+
