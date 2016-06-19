@@ -63,6 +63,12 @@ h4{
   text-decoration: none;
   padding:20px;
 }
+#navigation a:hover{
+  color: white;
+}
+#navigation a:visited{
+  color: white;
+}
 .aboutSection{
   background-color: white;
   border: black 2px solid;
