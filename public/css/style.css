@@ -50,7 +50,6 @@ header{
 #hostutler{
   padding-top: 30px;
   padding-bottom: 50px;
-
 }
 #name{
   padding: 100px;
@@ -59,7 +58,7 @@ header{
   background-image: url("../images/blacktriangles.png");
 }
 .container{
-  margin-top: 10%;
+  margin-top: 7%;
   background-color: #7E8AA2;
   padding:50px;
   overflow:auto;
@@ -78,7 +77,7 @@ header{
 }
 
 .aboutSection{
-  padding: 10px 70px 10px 40px;
+  padding: 10px 70px 0px 40px;
 }
 .aboutSection p{
   text-align: left;
