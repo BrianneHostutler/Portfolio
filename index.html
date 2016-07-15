@@ -1,177 +1,195 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet"  href="public/css/reset.css">
-<link rel="stylesheet"  href="public/css/style.css">
-	<head>
-		<link rel="shortcut icon" href="public/images/smiley.png">
-		<title>Brianne Hostutler</title>
-	</head>
+<link rel="stylesheet" href="public/css/reset.css">
+<link rel="stylesheet" href="public/css/style.css">
+
+<head>
+	<link rel="shortcut icon" href="public/images/smiley.png">
+	<title>Brianne Hostutler</title>
+</head>
 
 <body>
 
-<header>
-	<h1 id= "name">Brianne Hostutler</h1>
+	<header id="name">
+		<h1 id="fullName">
+			<div id="brianne">Brianne </div>
+			<div id= "hostutler">Hostutler</div>
+		</h1>
+		<h2>-Web Developer-</h2>
+
+	</header>
+
+
+	<!-- About -->
 	<nav id="navigation">
-		<a href=#home>About</a>
-    	<a href=#projects>Portfolio</a>
-    	<a href=#contact>Contact</a>
+		<a href=#about>About</a>
+		<a href=#projects>Portfolio</a>
+		<a href=#contact>Contact</a>
 	</nav>
-</header>
 
 
-<div class= "container">
-
-<!-- About -->
-	<div class="aboutSection">
-		<h2>About Me</h2>
-		<img src= "public/images/me.jpg" height="200" width="200" id="me">
+	<div class="aboutSection" id="about">
+		<img src="public/images/me.jpg" height="200" width="200" id="me">
 		<p>
-			<br>Hi, I'm Brianne, a web developer based out of New Jersey. I graduated in May of 2015 from Rutgers University in New Brunswick with a B.A. in Linguistics and Psychology.  <br><br>
-			I look at learning to code in the same way that I learned and studied languages as a Linguistics major. All languages, including computer programming languages, have a pattern that they follow. The trick to figuring them out is to learn and practice that pattern until you are fluent in that language. <br><br>
-			Interested in hiring me? Feel free to contact me!
+			<br>Hi, I'm Brianne, a web developer based out of New Jersey. I graduated in May of 2015 from Rutgers University in New Brunswick with a B.A. in Linguistics and Psychology.
+			<br>
+			<br> I look at learning to code in the same way that I learned and studied languages as a Linguistics major. All languages, including computer programming languages, have a pattern that they follow. The trick to figuring them out is to learn and practice
+			that pattern until you are fluent in that language.
+			<br>
+			<br> Interested in hiring me? Feel free to contact me!
 			<br>Email: <a href="mailto:briannehostutler@gmail.com">briannehostutler@gmail.com</a>.</p>
 		<div>
-			<a href=https://github.com/BrianneHostutler><img src= "public/images/github.png" height="50" width="50" ></a>
-			<a href=https://www.linkedin.com/in/briannehostutler><img src= "public/images/linkedin.png"height="48" width="48"></a>
+			<a href=https://github.com/BrianneHostutler><img src="public/images/github.png" height="50" width="50"></a>
+			<a href=https://www.linkedin.com/in/briannehostutler><img src="public/images/linkedin.png" height="48" width="48"></a>
 		</div>
-		
+
 	</div>
 
-
-<!-- Projects -->
-<div id ="projects">
-	<div id="projectsWrapper">
-		<h2>Portfolio</h2>
-			<br><br>
-		<div id="allProjects">		
-			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper">
-					<div class="front">
-						<img src="public/images/image5.jpg">
+	<div class="container">
+		<!-- Projects -->
+		<div id="projects">
+			<div id="projectsWrapper">
+				<h2>Portfolio</h2>
+				<br>
+				<br>
+				<div id="allProjects">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="public/images/image5.jpg">
+							</div>
+							<div class="back">
+								<h3><a href= "https://canieatthisapp.herokuapp.com/" target= '_blank'>Can I Eat This?</a></h3>
+							</div>
+						</div>
 					</div>
-					<div class="back">
-						<h3><a href= "https://canieatthisapp.herokuapp.com/" target= '_blank'>Can I Eat This?</a></h3>
+					<div class="textWrapper">
+						<h4 class=projText><a href= "https://canieatthisapp.herokuapp.com/" target= '_blank'>Can I Eat This?</a></h4>
+						<br>
+						<p>
+							Handy app for those that suffer from food allergies. Users type in UPC codes or use a barcode scanner to discover what food allergens that product contains. This was a collaborative project, in which I primarily worked on the front end.
+							<br>
+							<br> Technologies Used: HTML, CSS, Bootstrap, Node.js, Javascript, jQuery, AJAX, QuaggaJS
+							<br>
+							<br>
+							<a href="https://github.com/jahdasha/CanIEatThis" class="noUnderline">Github</a>
+						</p>
 					</div>
-				</div>
-			</div>
-<div class="textWrapper">			
-<h4 class=projText><a href= "https://canieatthisapp.herokuapp.com/" target= '_blank'>Can I Eat This?</a></h4>
-<br> 
-<p>
-Handy app for those that suffer from food allergies. Users type in UPC codes or use a barcode scanner to discover what food allergens that product contains. This was a collaborative project, in which I primarily worked on the front end.<br><br> Technologies Used: HTML, CSS, Bootstrap, Node.js, Javascript, jQuery, AJAX, QuaggaJS<br><br>
-<a href="https://github.com/jahdasha/CanIEatThis" class="noUnderline">Github</a>
-</p>	
-</div>	
-			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper">
-					<div class="front">
-							<img src="public/images/image3.jpg">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="public/images/image3.jpg">
+							</div>
+							<div class="back">
+								<h3><a href= "https://londontriviagame.herokuapp.com/" target= '_blank'>Trivia Game</a></h3>
+							</div>
+						</div>
 					</div>
-					<div class="back">
-						<h3><a href= "https://londontriviagame.herokuapp.com/" target= '_blank'>Trivia Game</a></h3>
-					</div>
-				</div>
-			</div>
-<div class="textWrapper">	
-<h4 class=projText>
+					<div class="textWrapper">
+						<h4 class=projText>
 <a href= "https://londontriviagame.herokuapp.com/" target= '_blank'>Trivia Game</a>
 </h4>
-<br> 
-<p>
-A game in which users race the clock and try to answer trivia questions about London correctly.
-<br>
-<br>Technologies Used: HTML, CSS, Javascript, jQuery<br>
-<br>
-<a href="https://github.com/BrianneHostutler/TriviaGame2" class="noUnderline">Github</a>
-</p>
-</div>
-			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper">
-					<div class="front">
-						<img src="public/images/image1.jpg">
+						<br>
+						<p>
+							A game in which users race the clock and try to answer trivia questions about London correctly.
+							<br>
+							<br>Technologies Used: HTML, CSS, Javascript, jQuery
+							<br>
+							<br>
+							<a href="https://github.com/BrianneHostutler/TriviaGame2" class="noUnderline">Github</a>
+						</p>
 					</div>
-					<div class="back">
-						<h3><a href="http://lychee-sundae-47966.herokuapp.com/" target= '_blank'>Script Javascript</a></h3>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="public/images/image1.jpg">
+							</div>
+							<div class="back">
+								<h3><a href="http://lychee-sundae-47966.herokuapp.com/" target= '_blank'>Script Javascript</a></h3>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-<div class="textWrapper">				
-<h4 class=projText><a href="http://lychee-sundae-47966.herokuapp.com/" target= '_blank'>Script Javascript</a></h4>
-<br> 
-<p>
-scriptJavascript is a guide for those who are just beginning to learn to code. It draws from knowledgeable sources to provide numerous resources for new web developers. This was a collaborative project in which I worked on the front end, particularly with the Google Maps API.
-<br><br>
-Technologies Used: HTML, CSS, MaterializeCSS, AJAX, Javascript, jQuery
-<br><br>
-<a href="https://github.com/BrianneHostutler/BeginnerGuide" class="noUnderline">Github</a>
-</p>
-</div>
-			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper">
-					<div class="front">
-						<img src="public/images/image4.jpg">
+					<div class="textWrapper">
+						<h4 class=projText><a href="http://lychee-sundae-47966.herokuapp.com/" target= '_blank'>Script Javascript</a></h4>
+						<br>
+						<p>
+							scriptJavascript is a guide for those who are just beginning to learn to code. It draws from knowledgeable sources to provide numerous resources for new web developers. This was a collaborative project in which I worked on the front end, particularly
+							with the Google Maps API.
+							<br>
+							<br> Technologies Used: HTML, CSS, MaterializeCSS, AJAX, Javascript, jQuery
+							<br>
+							<br>
+							<a href="https://github.com/BrianneHostutler/BeginnerGuide" class="noUnderline">Github</a>
+						</p>
 					</div>
-					<div class="back">
-						<h3><a href= "https://giphyfinder.herokuapp.com/" target= '_blank'>GIF Finder</a></h3>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="public/images/image4.jpg">
+							</div>
+							<div class="back">
+								<h3><a href= "https://giphyfinder.herokuapp.com/" target= '_blank'>GIF Finder</a></h3>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-<div class="textWrapper">	
-<h4 class=projText><a href= "https://giphyfinder.herokuapp.com/" target= '_blank'>GIF Finder</a>
+					<div class="textWrapper">
+						<h4 class=projText><a href= "https://giphyfinder.herokuapp.com/" target= '_blank'>GIF Finder</a>
 </h4>
-<br> 
-<p>
-A fun app which allows users to search for GIFs using the Giphy API. GIFs are categorized by emotion, and users can add their own emotion.
-<br><br>
-Technologies Used: HTML, CSS, Javascript, jQuery
-<br><br>
-<a href="https://github.com/BrianneHostutler/GifFinder" class="noUnderline">Github</a>
-</p>
-</div>
-			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper">
-					<div class="front">
-						<img src="public/images/image2.jpg">
+						<br>
+						<p>
+							A fun app which allows users to search for GIFs using the Giphy API. GIFs are categorized by emotion, and users can add their own emotion.
+							<br>
+							<br> Technologies Used: HTML, CSS, Javascript, jQuery
+							<br>
+							<br>
+							<a href="https://github.com/BrianneHostutler/GifFinder" class="noUnderline">Github</a>
+						</p>
 					</div>
-					<div class="back">
-						<h3><a href= "https://crystalcollector.herokuapp.com/" target= '_blank'>Crystal Collector</a></h3>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="public/images/image2.jpg">
+							</div>
+							<div class="back">
+								<h3><a href= "https://crystalcollector.herokuapp.com/" target= '_blank'>Crystal Collector</a></h3>
+							</div>
+						</div>
 					</div>
+					<div class="textWrapper">
+						<h4 class=projText><a href= "https://crystalcollector.herokuapp.com/" target= '_blank'>Crystal Collector</a></h4>
+						<br> A game in which the user tries to match their score to the generated number by clicking on crystals. Crystals are worth a certain amount of points, and each time the user clicks on a crystal points are added to their score.
+						<p>
+							Technologies Used: HTML, CSS, Bootstrap, Javascript, jQuery
+							<br>
+							<br>
+							<a href="https://github.com/BrianneHostutler/CrystalCollector" class="noUnderline">Github</a>
+						</p>
+					</div>
+
+
 				</div>
 			</div>
-<div class="textWrapper">	
-<h4 class=projText><a href= "https://crystalcollector.herokuapp.com/" target= '_blank'>Crystal Collector</a></h4>
-<br> 
-A game in which the user tries to match their score to the generated number by clicking on crystals. Crystals are worth a certain amount of points, and each time the user clicks on a crystal points are added to their score.
-<p>
-Technologies Used: HTML, CSS, Bootstrap, Javascript, jQuery
-<br><br>
-<a href="https://github.com/BrianneHostutler/CrystalCollector" class="noUnderline">Github</a>
-</p>
-</div>
-
-
 		</div>
-	</div>	
-</div>
 
 
-	<!-- Contact Section -->
-	<div id="contact">
-		<h2>Contact Me</h2><br>
+		<!-- Contact Section -->
+		<div id="contact">
+			<h2>Contact Me</h2>
+			<br>
 
-		<h4>Email: <a href="mailto:briannehostutler@gmail.com">briannehostutler@gmail.com</a>.</h4>
-		<div class="socialIcons">
-			<a href=https://github.com/BrianneHostutler><img src= "public/images/github.png" height="50" width="50" ></a>
-			<a href=https://www.linkedin.com/in/briannehostutler><img src= "public/images/linkedin.png"height="48" width="48"></a>
+			<h4>Email: <a href="mailto:briannehostutler@gmail.com">briannehostutler@gmail.com</a>.</h4>
+			<div class="socialIcons">
+				<a href=https://github.com/BrianneHostutler><img src="public/images/github.png" height="50" width="50"></a>
+				<a href=https://www.linkedin.com/in/briannehostutler><img src="public/images/linkedin.png" height="48" width="48"></a>
+			</div>
 		</div>
+
 	</div>
-
-</div>
 
 
 </body>
 
-	<!-- <footer>
+<!-- <footer>
 		<div id="footer">&copy;Copyright 2016 Brianne Hostutler</div>
 	</footer> -->
 
