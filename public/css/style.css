@@ -59,7 +59,7 @@ header{
 }
 .container{
   margin-top: 7%;
-  background-color: #7E8AA2;
+  background-image: url("../images/blacktriangles.png");
   padding:50px;
   overflow:auto;
 }
@@ -186,4 +186,8 @@ header{
   transform: rotateY(180deg);
   border: black 1px solid;
   background-color: white;
+}
+
+@media query and (max-width){
+
 }
