@@ -282,12 +282,15 @@ header{
 }
 @media screen and (max-width: 455px){
   #me{
-    width:250px;
+    width: 250px;
     padding: 10px;
     margin: 0 auto;
   }
   #meBox{
     width:100%;
+  }
+  .aboutSection{
+    padding: 10px;
   }
   .container{
     padding: 0px;
@@ -298,9 +301,7 @@ header{
   h4{
     font-size:12pt;
   }
-  #name{
-    padding:40px;
-  }
+
   #navigation{
     font-size: 1.7em;
   }
@@ -312,6 +313,12 @@ header{
   }
   #fullName{
     font-size: 4em;
+  }
+  #brianne{
+    padding-top: 30px;
+  }
+  #name{
+    padding:0px;
   }
   #allProjects{
     margin-top:-100px;
@@ -343,4 +350,5 @@ header{
     width:90%;
     margin-left: 0px;
   }
+
 }
