@@ -1,12 +1,62 @@
-@font-face {
-  font-family: headerFont;
-  src: url('AdmirationPains.ttf');
-  }
+
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
 body{
   background-color: white;
 }
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 9.5rem;
+  line-height: 125px;
+  letter-spacing: 0px;
+}
 p, h2, h3, h4, a{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 p{
   font-size: 16px;
@@ -47,14 +97,7 @@ a:link{
 header{
   background-color: white;
 }
-#fullName{
-  font-size: 8em;
-  font-family: headerFont;
-}
-#hostutler{
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
+
 #name{
   padding: 100px;
   text-align: center;
@@ -191,6 +234,9 @@ header{
   background-color: white;
 }
 @media only screen and (max-width: 1100px){
+  h1 {
+    font-size: 7rem;
+  }
   .projText{
     font-size: 16pt;
   }
@@ -199,6 +245,9 @@ header{
   }
 }
 @media only screen and (max-width: 850px){
+  h1 {
+    font-size: 5rem;
+  }
   #projects img{
     width:250px;
     height: 200px;
@@ -222,6 +271,9 @@ header{
   }
 }
 @media only screen and (max-width: 800px){
+  h1 {
+    font-size: 5rem;
+  }
   .flipper{
     margin: auto;
   }
@@ -252,8 +304,12 @@ header{
 
 }
 @media only screen and (max-width: 640px){
-  #fullName{
-    font-size: 5em;
+  h1 {
+    font-size: 5rem;
+    line-height: 90px;
+  }
+  #name {
+    padding: 0px;
   }
   #socials{
     width: 110px;
@@ -278,6 +334,7 @@ header{
   }
 }
 @media screen and (max-width: 500px){
+
   #projects img{
     width:300px;
     height: 220px;
@@ -295,6 +352,9 @@ header{
   }
 }
 @media screen and (max-width: 455px){
+  h1 {
+    font-size: 4rem;
+  }
   #me{
     width: 250px;
     padding: 10px;
@@ -324,12 +384,6 @@ header{
   }
   .aboutSection{
     padding: 0px;
-  }
-  #fullName{
-    font-size: 4em;
-  }
-  #brianne{
-    padding-top: 30px;
   }
   #name{
     padding:0px;
