@@ -1,4 +1,4 @@
 
-# Portfolio
+You can view my portfolio here:
 
-brianne.herokuapp.com
+briannehostutler.com
