@@ -386,6 +386,20 @@ header{
     margin: 0 auto;
   }
 
+	.flip-container {
+	  perspective: 1000px;
+	  margin-bottom: 30px;
+	  margin-right: 20px;
+	  float:left;
+	  display: block;
+	  clear:left;
+	}
+	  /* stop flipping the pane when hovered */
+	  .flip-container:hover .flipper, .flip-container.hover .flipper {
+	    transform: none;
+	  }
+
+
 }
 @media only screen and (max-width: 640px){
   .aboutSection {
