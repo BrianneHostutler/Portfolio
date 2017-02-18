@@ -133,7 +133,6 @@ transition: background-color 500ms linear;
   padding-bottom:40px;
 }
 #navigation a:link{
-  color: white;
   text-decoration: none;
   padding:20px;
 }
