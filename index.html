@@ -23,29 +23,33 @@
 
 <body>
 
-	<header id="name">
-		<h1 id="fullName">Brianne<br>Hostutler</div></h1>
-		<h2>-Web Developer-</h2>
+	<header>
+		<div class="navWrapper">
+			<nav id="navigation">
+				<a href=#about>About</a>
+				<a href=#projects>Portfolio</a>
+				<a href=#contact>Contact</a>
+			</nav>
+		</div>
+		<div id="name" class="">
+			<h1 id="fullName">Brianne<br>Hostutler</h1>
+			<h2 id="about">-Web Developer-</h2>
+		</div>
 	</header>
 
 	<!-- About -->
-	<nav id="navigation">
-		<a href=#navigation>About</a>
-		<a href=#projects>Portfolio</a>
-		<a href=#contact>Contact</a>
-	</nav>
 
-	<div class="aboutSection">
+
+	<div class="aboutSection" >
 		<div id="meBox">
 			<img src="public/images/me.jpg" height="230" width="230" id="me">
 		</div>
 		<div class="AboutDetail">
 			<p>
-				<br>Hi, I'm Brianne, a web developer based out of New Jersey. I graduated in May of 2015 from Rutgers University in New Brunswick and attended Rutgers Coding Bootcamp in Jersey City. I currently work as a front end developer for a digital agency in New Jersey.
-				<br>
-				<br> I look at coding in the same way that I studied languages as a Linguistics major. All languages, including computer programming languages, have a pattern that they follow. The key to figuring them out is to learn and practice
-				that pattern until you are fluent in that language.
-				<br>
+				<br>Hi, I'm Brianne, a web developer based out of New Jersey. I graduated in May of 2015 from Rutgers University in New Brunswick and attended Rutgers Coding Bootcamp in Jersey City in 2016. I currently work as a front end developer for a digital agency in New Jersey.
+			</p>
+			<p>
+				I'm knowledgable in many different web technologies inlcuding: HTML, CSS, Javascript, jQuery, Git, Wordpress, ExpressionEngine, Bootstrap, Foundation, and more. I also have experience using design tools such as Sketch and Photoshop.
 			</p>
 		</div>
 		<div class="socials card">
@@ -67,7 +71,6 @@
 				<br>
 				<br>
 				<div id="allProjects">
-
 					<div class="flip-container" id= "gifFinder" ontouchstart="this.classList.toggle('hover');">
 						<div class="flipper">
 							<div class="front">
@@ -80,7 +83,7 @@
 					</div>
 					<div class="textWrapper">
 						<h4 class=projText><a href= "https://doglog.herokuapp.com/" target= '_blank'>Dog Log</a>
-					</h4>
+						</h4>
 						<br>
 						<p>
 							Dog Log helps to keep track of anything related to your beloved animal.
@@ -92,7 +95,6 @@
 							<a href="https://github.com/BrianneHostutler/doglog" class="noUnderline">Github</a>
 						</p>
 					</div>
-
 					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 						<div class="flipper">
 							<div class="front">
@@ -127,8 +129,8 @@
 					</div>
 					<div class="textWrapper">
 						<h4 class=projText>
-<a href= "https://londontriviagame.herokuapp.com/" target= '_blank'>Trivia Game</a>
-</h4>
+						<a href= "https://londontriviagame.herokuapp.com/" target= '_blank'>Trivia Game</a>
+						</h4>
 						<br>
 						<p>
 							A game in which users race the clock and try to answer trivia questions about London correctly.
@@ -162,7 +164,6 @@
 							<a href="https://github.com/BrianneHostutler/BeginnerGuide" class="noUnderline">Github</a>
 						</p>
 					</div>
-
 					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 						<div class="flipper">
 							<div class="front">
@@ -183,8 +184,6 @@
 							<a href="https://github.com/BrianneHostutler/CrystalCollector" class="noUnderline">Github</a>
 						</p>
 					</div>
-
-
 				</div>
 			</div>
 		</div>
@@ -202,14 +201,10 @@
 			</div>
 		</div>
 
-	</div>
+	</div><!--end container-->
 
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/app.js"></script>
 
 </body>
-
-<!-- <footer>
-		<div id="footer">&copy;Copyright 2016 Brianne Hostutler</div>
-	</footer> -->
-
-
 </html>
