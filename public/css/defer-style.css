@@ -178,6 +178,13 @@ h4 {
     font-size: 20px
 }
 
+.projText {
+    font-size: 20pt
+}
+
+.textWrapper p {
+    font-size: 16pt
+}
 
 a:hover {
     color: #D7D1D9;
@@ -194,6 +201,13 @@ a:visited {
     color: #fff
 }
 
+.githubLink {
+    margin-top: 10px
+}
+
+.githubLink a {
+    font-size: 17pt
+}
 
 #name {
     padding: 120px
@@ -218,19 +232,13 @@ a:visited {
     -ms-transition: background-color .5s linear;
     transition: background-color .5s linear
 }
-#projects h3,
-p {
-    text-align: center;
-    margin: 15px
-}
+
 #contact a,
 .navWrapper.Stage2 a,
 .socials a {
-    color: #000;
+    color: #000
 }
-.card {
-    border: 1px solid #000
-}
+
 .navWrapper.Stage2 {
     background-color: #fff;
     border-bottom: gray 1px solid
@@ -240,15 +248,6 @@ p {
     font-size: 1.5rem;
     padding-top: 15px;
     padding-bottom: 40px
-}
-.socials {
-    width: 20%;
-    float: left;
-    margin-top: 33px;
-    margin-left: 35px
-}
-.socials p {
-    text-align: center!important
 }
 
 #navigation a:link {
@@ -261,11 +260,34 @@ p {
     margin-top: 33px;
     margin-left: 35px
 }
+
+.socials p {
+    text-align: center!important
+}
+
+.card {
+    border: 1px solid #000
+}
+
+#contact,
+#projects {
+    overflow: auto;
+    border: 2px solid #000;
+    background-color: #fff
+}
+
 .aboutSection {
     width: 100%;
     height: 270px;
     padding: 0
 }
+
+#projects img,
+.textWrapper {
+    height: 300px;
+    display: block
+}
+
 .aboutSection p {
     text-align: left
 }
@@ -274,60 +296,159 @@ p {
     width: 45%;
     float: left
 }
+
 .AboutDetail p {
     font-size: 18px
 }
+
 .TextLarge {
     font-size: 24px
 }
+
+#home {
+    margin: 7%
+}
+
 #me {
     float: left;
     margin: 3%
 }
+
+#email {
+    margin: 20%
+}
+
+.socialIcons {
+    text-align: center;
+    margin-top: 10px
+}
+
+#linkedIn {
+    display: inline-block
+}
+
+#projects {
+    margin-top: 5%
+}
+
+#projects img {
+    width: 375px;
+    margin-bottom: 20px;
+    clear: left
+}
+
+.textWrapper {
+    clear: right;
+    margin-top: 30px
+}
+
+#projects h3,
+p {
+    text-align: center;
+    margin: 15px
+}
+
 #contact {
     margin-top: 20px;
     margin-left: 25%;
     padding: 20px;
-    width: 40%;
-    border: 2px solid #000;
+    width: 40%
 }
 
+.back,
+.front {
+    border: 1px solid #000
+}
+
+#projectsWrapper {
+    margin-left: 20px;
+    padding: 30px
+}
+
+.flip-container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    float: left;
+    display: block;
+    clear: left
+}
+
+.flip-container.hover .flipper,
+.flip-container:hover .flipper {
+    transform: rotateY(180deg)
+}
+
+.back,
+.flip-container,
+.front {
+    width: 375px;
+    height: 300px
+}
+
+.flipper {
+    transition: .6s;
+    transform-style: preserve-3d;
+    position: relative
+}
+
+.back,
+.front {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0)
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #fff
+}
 
 @media only screen and (max-width:1100px) {
     .socials {
         margin-left: 0
     }
     #me {
-        margin-right: 5px;
+        margin-right: 5px
     }
     h1 {
-        font-size: 7rem;
+        font-size: 7rem
     }
-
+    .projText {
+        font-size: 16pt
+    }
+    .textWrapper p {
+        font-size: 12pt
+    }
 }
 
 @media only screen and (max-width:975px) {
+    #me {
+        height: 210px;
+        width: 210px
+    }
     .socials p {
         margin-left: 1px;
         margin-right: 1px
     }
-    #me {
-        height: 210px;
-        width: 210px;
-    }
-
 }
 
 @media only screen and (max-width:890px) {
     #navigation {
-        padding-bottom: 15px;
+        padding-bottom: 15px
     }
     .aboutSection {
-        height: 365px;
+        height: 365px
     }
     .AboutDetail {
         width: 70%;
-        margin-bottom: 45px;
+        margin-bottom: 45px
     }
     .socials {
         width: 100%;
@@ -338,10 +459,23 @@ p {
 
 @media only screen and (max-width:850px) {
     h1 {
-        font-size: 6rem;
+        font-size: 6rem
+    }
+    #projects img,
+    .back,
+    .flip-container,
+    .front {
+        width: 250px;
+        height: 200px
+    }
+    .back a {
+        font-size: 14pt
     }
     h3 {
         padding-top: 50px
+    }
+    #projects p {
+        margin: 0
     }
 }
 
@@ -354,6 +488,38 @@ p {
     }
     h1 {
         font-size: 5rem
+    }
+    .flipper {
+        margin: auto
+    }
+    .textWrapper {
+        clear: both;
+        height: 230px
+    }
+    #projects img {
+        width: 100%;
+        height: 100%
+    }
+    #allProjects {
+        width: 100%;
+        position: relative;
+        text-align: center
+    }
+    .flip-container {
+        text-align: center;
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%
+    }
+    .back,
+    .flip-container,
+    .front {
+        width: 100%;
+        height: 400px
+    }
+    .back a {
+        font-size: 24pt
     }
 }
 
@@ -379,12 +545,21 @@ p {
         width: 200px;
         margin: 0 auto
     }
+    .flip-container {
+        perspective: 1000px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        float: left;
+        display: block;
+        clear: left
+    }
+    .flip-container.hover .flipper,
+    .flip-container:hover .flipper {
+        transform: none
+    }
 }
 
 @media only screen and (max-width:640px) {
-    #socials {
-        width: 110px
-    }
     .navWrapper a {
         font-size: 16pt
     }
@@ -402,42 +577,108 @@ p {
     #name {
         padding: 100px 0
     }
+    #socials {
+        width: 110px
+    }
+    #projectsWrapper {
+        margin-left: 0
+    }
+    #projects {
+        width: 100%;
+        border: 0
+    }
+    #projects img,
+    .back,
+    .flip-container,
+    .front {
+        width: 350px;
+        height: 270px
+    }
+    .flip-container {
+        float: none;
+        margin-right: auto;
+        margin-left: auto
+    }
+    .back a {
+        font-size: 14pt
+    }
 }
 
 @media screen and (max-width:500px) {
     .aboutSection {
         height: 650px
     }
+    #projects img,
+    .back,
+    .flip-container,
+    .front {
+        width: 300px;
+        height: 220px
+    }
+    #projectsWrapper {
+        padding: 0
+    }
+    .flip-container {
+        float: none;
+        margin: 0 auto
+    }
+    .back a {
+        font-size: 14pt
+    }
 }
 
 @media screen and (max-width:455px) {
+    #projectsWrapper,
     .container {
-        padding: 0;
+        padding: 0
     }
     .aboutSection {
-        height: 700px;
+        height: 700px
+    }
+    #projects img,
+    .back,
+    .flip-container,
+    .front {
+        width: 200px;
+        height: 150px
     }
     h1 {
-        font-size: 4rem;
+        font-size: 4rem
     }
     #me {
         padding: 10px;
-        margin: 0 auto;
+        margin: 0 auto
     }
     h2 {
-        font-size: 22pt;
+        font-size: 22pt
     }
     h4 {
-        font-size: 12pt;
+        font-size: 12pt
     }
     #navigation {
-        font-size: 1.7em;
+        font-size: 1.7em
     }
     #navigation a:link {
-        padding: 10px;
+        padding: 10px
     }
     #name {
-        padding: 100px 0;
+        padding: 100px 0
     }
-   
+    #allProjects {
+        margin-top: -100px
+    }
+    .flip-container {
+        float: none;
+        margin: 0 auto
+    }
+    .back a {
+        font-size: 14pt
+    }
+    #gifFinder {
+        margin-top: 100px
+    }
+    #contact {
+        width: 90%;
+        margin-left: 0
+    }
 }
