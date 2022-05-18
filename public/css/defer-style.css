@@ -335,4 +335,8 @@ p {
         max-width: 200px;
         
     }
+    .content {
+         margin: 2rem 1rem;
+        padding: 1rem;
+    }
 }
