@@ -149,7 +149,7 @@ body {
 
 .me {
     max-width: 300px;
-
+    border-radius: 100%;
 }
 
 .socials {
@@ -177,7 +177,7 @@ p {
 }
 
 .bg {
-    animation: slide 20s ease-in-out infinite alternate;
+/*    animation: slide 20s ease-in-out infinite alternate;*/
     background-image: linear-gradient(-60deg, #808080 50%, #000000 50%);
     bottom: 0;
     left: -50%;
@@ -334,6 +334,9 @@ p {
     .me {
         max-width: 200px;
         
+    }
+    .typewriter p  {
+        font-size: 1.5rem;
     }
     .content {
          margin: 2rem 1rem;
